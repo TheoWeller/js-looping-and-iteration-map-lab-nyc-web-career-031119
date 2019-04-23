@@ -9,6 +9,6 @@ function nameToAttributes(drivers) {
   let newArray = [];
   let counter = 0;
   drivers.map(driver => newArray.push(driver.split(" ")))
-  newArray.map(driver => {firstName: driver[0], lastName: driver[1]});
+  newArray.map(driver => driver = {driver.firstName = driver[0], driver.lastName = driver[1]});
   return newArray;
 }
